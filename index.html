@@ -5,35 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.6.0/moment-timezone-with-data-1970-2030.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="src/style.css" />
     <title>Time Zone Project</title>
   </head>
   <body>
-    <h1>World Clock</h1>
+    <div class="container">
+      <h1>World Clock</h1>
+      <img src="media/Location pin.svg" alt="location-pin" />
+      <select name="cities" id="cities">
+        <option value="">Select a city...</option>
+        <option value="">London</option>
+        <option value="">Toronto</option>
+        <option value="">Tokyo</option>
+      </select>
 
-    <select name="cities" id="cities">
-      <option value="">Select a city...</option>
-      <option value="">London</option>
-      <option value="">Toronto</option>
-      <option value="">Tokyo</option>
-    </select>
+      <div class="currentCity">
+        <h2>New York</h2>
+        <div class="time">00:00:00 <span class="amPm">AM</span></div>
+        <div class="date">Sunday June 1, 2025</div>
+      </div>
 
-    <div class="city">
-      <h2>New York</h2>
-      <div class="date"></div>
-      <div class="time"></div>
-
-      <h2>Ho Chi Minh</h2>
-      <div class="date"></div>
-      <div class="time"></div>
+      <footer>
+        Coded by Tianna Mendoza and is open sourced on
+        <a href="https://github.com/mainlyti/Time-Zone-Project" target="_blank"
+          >Github</a
+        >
+      </footer>
     </div>
-
-    <footer>
-      Coded by Tianna Mendoza and is opensourced on
-      <a href="https://github.com/mainlyti/Time-Zone-Project" target="_blank"
-        >Github</a
-      >
-    </footer>
     <script src="src/index.js"></script>
   </body>
 </html>
