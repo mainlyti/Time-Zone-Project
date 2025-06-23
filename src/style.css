@@ -39,11 +39,13 @@ select {
 }
 
 h2 {
+  color: #51409d;
   font-size: 40px;
   margin-bottom: 0;
 }
 
 .time {
+  color: #392d6c;
   text-align: center;
   font-size: 100px;
   margin: 0;
@@ -55,9 +57,10 @@ h2 {
 }
 
 .date {
+  color: #51409d;
   text-align: right;
   font-size: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 footer {
