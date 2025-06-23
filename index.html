@@ -14,26 +14,45 @@
         <h1>World Clock</h1>
       </a>
       <img src="media/Location pin.svg" alt="location-pin" />
-      <select name="cities" id="cities">
+
+      <select name="city" id="city">
         <option value="">Select a city...</option>
-        <option value="">London</option>
-        <option value="">Toronto</option>
-        <option value="">Tokyo</option>
+        <option value="Europe/London">London</option>
+        <option value="America/Toronto">Toronto</option>
+        <option value="Asia/Tokyo">Tokyo</option>
+        <option value="America/New_York">New York</option>
       </select>
 
-      <div class="currentCity" id="newYork">
+      <div class="currentCity" id="currentCity">
         <h2>New York</h2>
-        <div class="time">00:00:00 <span class="amPm">AM</span></div>
-        <div class="date">Sunday June 1, 2025</div>
+        <div class="currentTime">00:00:00 <small>AM</small></div>
+        <div class="currentDate">Monday June 23, 2025</div>
       </div>
 
-      <footer>
-        Coded by Tianna Mendoza and is open sourced on
-        <a href="https://github.com/mainlyti/Time-Zone-Project" target="_blank"
-          >Github</a
-        >
-      </footer>
+      <div class="cities">
+        <div class="otherCity">
+          <h3>London</h3>
+          <div class="time">00:00:00 <small>AM</small></div>
+        </div>
+
+        <div class="otherCity">
+          <h3>Toronto</h3>
+          <div class="time">00:00:00 <small>AM</small></div>
+        </div>
+
+        <div class="otherCity">
+          <h3>Tokyo</h3>
+          <div class="time">00:00:00 <small>AM</small></div>
+        </div>
+      </div>
     </div>
+    <footer>
+      Coded by Tianna Mendoza and is open sourced on
+      <a href="https://github.com/mainlyti/Time-Zone-Project" target="_blank"
+        >Github</a
+      >
+    </footer>
+
     <script src="src/index.js"></script>
   </body>
 </html>
