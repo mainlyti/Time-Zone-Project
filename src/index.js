@@ -1,11 +1,17 @@
-//New York
-let newYorkElement = document.querySelector("#newYork");
-let newYorkDateElement = newYorkElement.querySelector(".date");
-let newYorkTimeElement = newYorkElement.querySelector(".time");
+function updateTime() {
+  //New York
+  let newYorkElement = document.querySelector("#new-york");
+  if (newYorkElement) {
+    let newYorkDateElement = newYorkElement.querySelector(".currentDate");
+    let newYorkTimeElement = newYorkElement.querySelector(".currentTime");
+    let newYorkTime = moment().tz("America/New_York");
 
-newYorkDateElement.innerHTML = moment()
-  .tz("America/New_York")
-  .format("dddd MMMM D, YYYY");
-newYorkTimeElement.innerHTML = moment()
-  .tz("America/New_York")
-  .format("h:mm:ss [<small>]A[</small>]");
+    newYorkDateElement.innerHTML = newYorkTime.format("dddd MMMM D, YYYY");
+    newYorkTimeElement.innerHTML = newYorkTime.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
+  }
+}
+
+updateTime();
+setInterval(updateTime, 1000);
