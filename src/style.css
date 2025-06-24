@@ -14,7 +14,7 @@ body {
 }
 
 h1 {
-  background: #7d61f3;
+  background: #f15776;
   color: white;
   padding: 10px;
   width: 163px;
@@ -40,20 +40,20 @@ select {
 }
 
 h2 {
-  color: #51409d;
+  color: #8f3446;
   font-size: 40px;
   margin-bottom: 0;
 }
 
 .currentTime {
-  color: #392d6c;
+  color: #58222d;
   text-align: center;
   font-size: 89px;
   margin: 0;
 }
 
 .currentDate {
-  color: #51409d;
+  color: #8f3446bf;
   text-align: right;
   font-size: 30px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.301);
@@ -67,7 +67,7 @@ footer {
 }
 
 a {
-  color: #7d61f3;
+  color: #f15776;
 }
 
 .cities {
@@ -82,7 +82,7 @@ h3 {
 }
 
 .otherCity {
-  background: #7d61f3;
+  background: #f15776;
   color: white;
   border-radius: 50px;
   width: 134px;
