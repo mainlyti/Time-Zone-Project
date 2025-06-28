@@ -1,16 +1,21 @@
 function updateTime() {
-  let currentCityElement = document.querySelector("h2");
-  let currentCityTimeElement = document.querySelector(".currentTime");
-  let currentCityDateElement = document.querySelector(".currentDate");
-  let currentCity = moment.tz.guess();
-  let currentCityDate = moment.tz(currentCity);
+  let currentCityElement = document.querySelector("#current-city");
+  if (currentCityElement) {
+    let currentCityNameElement = document.querySelector(".currentName");
+    let currentCityTimeElement = document.querySelector(".currentTime");
+    let currentCityDateElement = document.querySelector(".currentDate");
+    let currentCity = moment.tz.guess();
+    let currentCityDate = moment.tz(currentCity);
 
-  currentCityElement.innerHTML = currentCity.replace("_", " ").split("/")[1];
-  currentCityTimeElement.innerHTML = currentCityDate.format(
-    "h:mm:ss [<small>]a[</small>]"
-  );
-  currentCityDateElement.innerHTML =
-    currentCityDate.format("dddd MMMM D, YYYY");
+    currentCityNameElement.innerHTML = currentCity
+      .replace("_", " ")
+      .split("/")[1];
+    currentCityTimeElement.innerHTML = currentCityDate.format(
+      "h:mm:ss [<small>]a[</small>]"
+    );
+    currentCityDateElement.innerHTML =
+      currentCityDate.format("dddd MMMM D, YYYY");
+  }
 
   //London
   let londonElement = document.querySelector("#london");
@@ -46,7 +51,7 @@ function updateCity(event) {
   let cityElement = document.querySelector("#allDisplayedCities");
   cityElement.innerHTML = `
   <div class="currentCity">
-          <h2>${cityName}</h2>
+          <h2 class="currentName">${cityName}</h2>
           <div class="currentTime">${cityTime.format(
             "h:mm:ss [<small>]a[</small>]"
           )}</div>
